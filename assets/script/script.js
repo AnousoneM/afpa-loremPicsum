@@ -1,6 +1,7 @@
 // Nous déclarons une variable qui sera le total de nos photos
 let totalPhotos = 1
 
+// Mise en place d'un param nbPhotos avec une valeur par défaut
 function createGallery(nbPhotos = 12) {
     let gallery = document.querySelector('#gallery')
     for (let i = 0; i <= nbPhotos; i++) {
@@ -26,7 +27,7 @@ window.addEventListener('scroll', () => {
     // window.scrollY = distance de scroll
     // window.innerHeight = partie visible de l'écran
     // rajout de 100px en raison de l'écran de test
-    if (window.scrollY + window.innerHeight + 100 >=
+    if (window.scrollY + window.innerHeight + 90 >=
         document.documentElement.scrollHeight) {
         createGallery(8)
     }
