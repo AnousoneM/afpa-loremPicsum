@@ -6,7 +6,7 @@ function createGallery(nbPhotos = 12) {
     let gallery = document.querySelector('#gallery')
     for (let i = 0; i <= nbPhotos; i++) {
         gallery.innerHTML += `
-        <div class="col-3 mt-2 text-center">
+        <div class="col-lg-3 col-6 mt-4 text-center">
             <a href="https://picsum.photos/480/640?random=${totalPhotos}" data-lightbox="gallery" data-title="Une belle photo du site Lorem Picsum">
             <img class="img rounded border border-5" src="https://picsum.photos/480/640?random=${totalPhotos}"
             alt="Une photo du site Lorem Picsum">
