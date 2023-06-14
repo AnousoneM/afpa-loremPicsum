@@ -1,3 +1,5 @@
+# Ignore les librairies
 node_modules
 
+# ignore les fichiers macOs
 .DS_STORE
